@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<title>Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "wr_tish_kid2regular", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 150px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 100px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-white">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-brown">
+  <!-- Avatar image in top left corner -->
+  <img src="Pic.png" style="width:100%">
+
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-pink">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p><h3>HOME</h3></p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-pink">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p><h3>ABOUT ME</h3></p>
+  </a>
+  <a href="#educations" class="w3-bar-item w3-button w3-padding-large w3-hover-pink">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p><h3>EDUCATIONS</h3></p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-pink">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p><h3>CONTACT</h3></p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
+    <a href="#educations" class="w3-bar-item w3-button" style="width:25% !important">EDUCATIONS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1000px;" id="home">
+  	<div class="w3-display-middle w3-margin-top w3-center">
+  		<h1 class="w3-text-white"> <span class="w3-padding w3-blue w3-opacity-min"><b>Mr. Ekkamol Saeliang</b></span></h1>
+  	</div>
+  	<br>
+  	<div class="w3-content w3-section" style="max-width:1500px">
+  		<img class="mySlides w3-animate-fading" src="1.jpg" style="width:100%">
+  		<img class="mySlides w3-animate-fading" src="2.jpg" style="width:100%">
+  		<img class="mySlides w3-animate-fading" src="3.jpg" style="width:100%">
+  		<img class="mySlides w3-animate-fading" src="4.jpg" style="width:100%">
+  	</div>
+
+  <script>
+  var myIndex = 0;
+  carousel();
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 9000);
+  }
+  </script>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-blue w3-padding-64" id="about">
+    <h2 class="w3-text-red"><b>Address</b></h2>
+    <hr style="width:200px">
+    <p><h3>&nbsp;&nbsp;House No.21/2, Village No.3, Padang Besar sub-district, Sadao district, Sonhkhla province, 90240</h3></p>
+    <br>
+
+    <h2 class="w3-text-red"><b>Personal Details</b></h2>
+    <hr style="width:200px">
+    <p><h3><b>&nbsp;Date of Birth:</b> &nbsp;June 5, 1996<br>
+            <b>&nbsp;Age:</b> &nbsp;21<br>
+            <b>&nbsp;Marital Status:</b> &nbsp;Single<br>
+            <b>&nbsp;Nationality:</b> &nbsp;THAI<br>
+            <b>&nbsp;Religion:</b> &nbsp;Buddhist<br>
+            <b>&nbsp;Interest and Activities:</b> &nbsp;Listening and speaking<br>
+            <b>&nbsp;Hobbies:</b> &nbsp;Listen to Music, Watching to Movies
+    </h3></p>
+    <br>
+
+    <h2 class="w3-text-red"><b>Educations</b></h2>
+    <hr style="width:200px">
+    <p><h3><b>&nbsp;2015 - Present:</b> &nbsp;Bachelor of Business Administration, Information System Major, Faculty of Management Sciences, Prince of Songkla University Hatyai Campus.<br>
+          <b>&nbsp;2009 - 2015:</b> &nbsp;Hatyaiwittayalai 2 School, Mathematics-English program.</h3></p><br>
+
+    <h2 class="w3-text-red"><b>Experience</b></h2>
+    <hr style="width:200px">
+    <p><h3>&nbsp;I've create a website about tree in PSU <u>https://taicyber52.github.io/project_treeinpsu/#home</u><br>
+            &nbsp;I've joined training workshop in project "Google App" organized by senior in major<br>
+            &nbsp;I've joined the academic seminar in project "Cyber Security of Life" organized by professor in major<br>
+    </h3></p><br>
+
+    <h2 class="w3-padding-16 w3-text-red"><b>My Skills</b></h2>
+    <img src="Visual Studio.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p class="w3-wide"><h3>&nbsp;Visual Studio (20%)</h3></p>
+    <div class="w3-purple w3-round-xlarge">
+      <div class="w3-container w3-center w3-round-xlarge w3-yellow" style="height:28px;width:20%"></div>
+    </div>
+    <br>
+    <br>
+    <img src="Android Studio.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p class="w3-wide"><h3>&nbsp;Android Studio (20%)</h3></p>
+    <div class="w3-purple w3-round-xlarge">
+      <div class="w3-container w3-center w3-round-xlarge w3-yellow" style="height:28px;width:20%"></div>
+    </div>
+    <br>
+    <br>
+    <img src="Adobe Photoshop.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p class="w3-wide"><h3>&nbsp;Adobe Photoshop (30%)</h3></p>
+    <div class="w3-purple w3-round-xlarge">
+      <div class="w3-container w3-center w3-round-xlarge w3-yellow" style="height:28px;width:30%"></div>
+    </div>
+    <br>
+    <br>
+    <img src="Microsoft Office.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p class="w3-wide"><h3>&nbsp;Microsoft Office (30%)</h3></p>
+    <div class="w3-purple w3-round-xlarge">
+      <div class="w3-container w3-center w3-round-xlarge w3-yellow" style="height:28px;width:30%"></div>
+    </div>
+    <br>
+    <br>
+    <img src="Sony Vegas.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p class="w3-wide"><h3>&nbsp;Sony Vegas ()30%</h3></p>
+    <div class="w3-purple w3-round-xlarge">
+      <div class="w3-container w3-center w3-round-xlarge w3-yellow" style="height:28px;width:30%"></div>
+    </div>
+    <br>
+    </div>
+    <!-- End About Section -->
+  </div>
+
+  <!-- Grid for Educations -->
+  <div class="w3-padding-64 w3-content" id="educations">
+    <h2 class="w3-text-red"><b>Study Results</b> (B.B.A.)</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide"><h3>&nbsp;Adviser Asst. Prof. Jirawan Samangsri (E-mail: jirawan.sa@psu.ac.th)</h3></p>
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-dark-grey w3-center w3-opacity w3-hover-opacity-off">
+          <h3><li class="w3-green w3-xlarge w3-padding-32">1/2558</h3></li>
+          <h4>
+          <li class="w3-padding-16">315-201	SCIENCE, TECHNOLOGY & SOCIETY&nbsp; <b>>> C+</b></li>
+          <li class="w3-padding-16">460-101	INTRO TO BUSINESS&nbsp;	<b>>> D+</b></li>
+          <li class="w3-padding-16">460-102	PRINCIPLES OF ACCOUNTING&nbsp; <b>>> C+</b></li>
+          <li class="w3-padding-16">477-101	FOUND OF INFOMATION SYS&nbsp; <b>>> C+</b></li>
+          <li class="w3-padding-16">876-102	PRINCIPLE OF ECONOMICS & APPL&nbsp; <b>>> C+</b></li>
+          <li class="w3-padding-16">890-100	PREPARATORY FOUNDATION ENG&nbsp; <b>>> S</b></li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-purple">SEMESTER GRADE POINT AVERAGE&nbsp; <b>:	2.30</b></button>
+          </li>
+        </h4>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-dark-grey w3-center w3-opacity w3-hover-opacity-off">
+          <h3><li class="w3-green w3-xlarge w3-padding-32">2/2558</h3></li>
+          <h4>
+          <li class="w3-padding-16">001-131	HEALTHY BODY AND MIND&nbsp; <b>>> A</b></li>
+          <li class="w3-padding-16">322-100	MATHEMATICS IN EVERYDAY LIFE&nbsp;	<b>>> D</b></li>
+          <li class="w3-padding-16">460-104	PRINCIPLES OF FINANCE&nbsp; <b>>> C</b></li>
+          <li class="w3-padding-16">460-106	PRINCI OF BUSINESS MANAGEMENT&nbsp; <b>>> A</b></li>
+          <li class="w3-padding-16">477-102	PROGRAM LOGIC & DATA STRUCT&nbsp; <b>>> C</b></li>
+          <li class="w3-padding-16">890-101	FUNDA ENG LISTEN & SPEAK&nbsp; <b>>> D+</b></li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-purple">SEMESTER GRADE POINT AVERAGE &nbsp; <b>:	2.41</b></button>
+          </li>
+        </h4>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-dark-grey w3-center w3-opacity w3-hover-opacity-off">
+          <h3><li class="w3-yellow w3-xlarge w3-padding-32">1/2559</h3></li>
+          <h4>
+          <li class="w3-padding-16">460-103	PRINCIPLES OF MARKETING&nbsp; <b>>> B+</b></li>
+          <li class="w3-padding-16">460-105	BUSINESS STATISTICS & APP&nbsp;	<b>>> C</b></li>
+          <li class="w3-padding-16">477-201	COMPUTER PROGRAMMING&nbsp; <b>>> B</b></li>
+          <li class="w3-padding-16">477-202	COMPUTING PLATFORM TECHNO&nbsp; <b>>> A</b></li>
+          <li class="w3-padding-16">890-102	FUNDA ENG READING & WRITING&nbsp; <b>>> D</b></li>
+          <li class="w3-padding-16">895-171	WISDOM OF LIVING&nbsp; <b>>> B+</b></li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-purple">SEMESTER GRADE POINT AVERAGE&nbsp; <b>:	2.83</b></button>
+          </li>
+        </h4>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-dark-grey w3-center w3-opacity w3-hover-opacity-off">
+          <h3><li class="w3-yellow w3-xlarge w3-padding-32">2/2559</h3></li>
+          <h4>
+          <li class="w3-padding-16">460-202	MANAGEMENT ACCOUNTING&nbsp; <b>>> C</b></li>
+          <li class="w3-padding-16">460-203	OPERATIONS MANAGEMENT&nbsp;	<b>>> B</b></li>
+          <li class="w3-padding-16">477-203	HUMAN FACT INFO SYSTEM&nbsp; <b>>> B+</b></li>
+          <li class="w3-padding-16">477-204	DATABASE SYSTEM&nbsp; <b>>> D</b></li>
+          <li class="w3-padding-16">477-205	DATA COMMUNI & COM NETWORK&nbsp; <b>>> B</b></li>
+          <li class="w3-padding-16">895-104	MAN AND ENVIRONMENT&nbsp; <b>>> A</b></li>
+          <li class="w3-padding-16">895-111	MAN AND SOCIETY&nbsp; <b>>> B+</b></li>
+          <li class="w3-padding-16">895-161	EXERCISE FOR HEALTH&nbsp; <b>>> B+</b></li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-purple">SEMESTER GRADE POINT AVERAGE &nbsp; <b>:	2.88</b></button>
+          </li>
+        </h4>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-dark-grey w3-center w3-opacity w3-hover-opacity-off">
+          <h3><li class="w3-orange w3-xlarge w3-padding-32">3/2559</h3></li>
+          <h4>
+          <li class="w3-padding-16">890-214	01	CON LISTEN & SPEAK SKIL IN ENG&nbsp; <b>>> D</b></li>
+          <li class="w3-padding-16">895-126	01	ART OF COMMUNICATION&nbsp;	<b>>> B+</b></li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-purple">SEMESTER GRADE POINT AVERAGE&nbsp; <b>:	2.25</b></button>
+          </li>
+        </h4>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-dark-grey w3-center w3-opacity w3-hover-opacity-off">
+          <h3><li class="w3-orange w3-xlarge w3-padding-32">1/2560</h3></li>
+          <h4>
+          <li class="w3-padding-16">460-201	02	BUSINESS LAW&nbsp; <b>>> C+</b></li>
+          <li class="w3-padding-16">460-301	05	TAXATION I&nbsp;	<b>>> D+</b></li>
+          <li class="w3-padding-16">460-400	02	CO-CURRICULAR ACTIVITIES I&nbsp; <b>>> A</b></li>
+          <li class="w3-padding-16">474-302	01	GLOBAL MARKETING&nbsp; <b>>> B</b></li>
+          <li class="w3-padding-16">477-206	01	MOBILE APP PROGRAMMING&nbsp; <b>>> C+</b></li>
+          <li class="w3-padding-16">477-301	01	SYSTEM ANALYSIS & DESIGN&nbsp; <b>>> C</b></li>
+          <li class="w3-padding-16">890-221	02	IMPROVING READING IN ENGLISH&nbsp; <b>>> D+</b></li>
+          <li class="w3-padding-16">950-301	02	CONFLICTS & PEACE IN ASEAN&nbsp; <b>>> A</b></li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-purple">SEMESTER GRADE POINT AVERAGE &nbsp; <b>:	2.50</b></button>
+          </li>
+        </h4>
+        </ul>
+      </div>
+    </div>
+    <!-- End for Educations -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-red"><b>Contact Me</b></h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-phone fa-fw w3-text-blue w3-xxlarge w3-margin-right"></i>086-0915255</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-blue w3-xxlarge w3-margin-right"> </i>Email: Tai.cyber52@hotmail.com</p>
+      <p><i class="fa fa-facebook-official fa-fw w3-text-blue w3-xxlarge w3-margin-right"> </i>เอกกมล แซ่เลี่ยง</p>
+    </div><br>
+
+  <!-- End Contact Section -->
+  </div>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
